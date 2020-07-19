@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap');
+
+/*font family */
+
+.font-borlow{
+	font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.font-aldrich{
+	font-family: 'Aldrich', sans-serif !important;
+}
+.font-roboto{
+	font-family: 'Roboto', sans-serif;
+}
+.font-la-belle-auror{
+	font-family: 'La Belle Aurore', cursive;
+}
+.font-Oswald{
+	font-family: 'Oswald', sans-serif;
+}
+
+/* */
+
+.html-tag{
+	color:#515152;
+}
+/* remove margin form  p tab */
+p{
+	margin: 0px !important;
+}
+
+/* change curser to ponter*/
+.cursor-pointer{
+
+	cursor: pointer;
+}
+
+
+.m-h-100{
+	min-height:100% !important;
+}
+
+
+/* for small screen hide some details*/
+.small-screen{
+	display: none;
+}
+@media screen and (max-width: 900px) {
+	.small-screen{
+		display: flex;
+	}
+	.large-screen{
+		display: none;
+	} 
+}
+
+/* color for core element*/
+.body-bg{
+	fill:#1d1d1d;
+	background-color:#1d1d1d;
+}
+
