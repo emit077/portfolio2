@@ -60,8 +60,10 @@
 											Interested in the entire frontend spectrum and working on ambitious projects with positive people.
 										</p>
 									</div>
-									
 								</div>
+							</div>
+							<div class="small-screen">
+								<Suffle/>
 							</div>
 							<p class="pt-5 html-tag"> {{html_content[1]}}</p>
 						</div>
@@ -69,7 +71,7 @@
 					</div>
 				</div>
 			</v-col>
-			<v-col md="6" sm="6" cols="12" data-aos="fade-right">
+			<v-col md="6" sm="6" cols="12" data-aos="fade-right" class="large-screen">
 				<v-row align="center" justify="center" class="align m-h-100">
 					<v-col md="7">
 						<Suffle/>

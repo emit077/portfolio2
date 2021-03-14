@@ -19,6 +19,14 @@
 	padding: 5px;
 }
 
+@media screen and (max-width: 900px) {
+	.contact-data{
+		/*font-weight: bold;*/
+		font-size: 14px;
+		padding: 5px;
+	}
+}
+
 
 </style>
 

@@ -27,16 +27,19 @@
   margin: 2px;
   padding: 5px 8px !important;
 }
+.drawer-logo{
+  height: 40px;
 
+}
 </style>
 
 <template>
-  <v-navigation-drawer color="#181818" v-model="$store.state.drawer"  app mini-variant >
+  <v-navigation-drawer color="#181818" v-model="$store.state.drawer"  app mini-variant class="large-screen" >
     <div class="black text-center">
       <v-list-item class="px-2">
-        <img src="../../assets/logo/logo1.png">
+        <img src="../../assets/logo/logo1.png" class="drawer-logo">
       </v-list-item>
-      <small class="html-tag white--text  ">
+      <small class="html-tag white--text ">
         <b>Amit</b>
       </small>
     </div>
@@ -48,12 +51,14 @@
           class="tab-item" 
           v-for="(item) in items" 
           :key="item.title"
-          :to="item.url"
+          @click="$router.push(item.url)"
+          :class="$route.name==item.url.name?'v-list-item--active':''"
           >
+          <!-- :to="item.url" -->
           <div class="w-100">
             <v-icon :class="$route.name==item.url.name?'active-tab':'tab'" >{{item.icon}}</v-icon>
             <br>
-            <p class="tab-text" v-if="item.isactive|| $route.name==item.url.name " :class="$route.name==item.url.name?'active-tab':'tab'">
+            <p class="tab-text" v-if="item.isactive||$route.name==item.url.name" :class="$route.name==item.url.name?'active-tab':'tab'">
               {{item.title}}
             </p>
           </div>
@@ -81,10 +86,8 @@ export default {
   },
   method:{
     findActive(index){
-      console.log(index)
 
       this.items[index].isactive=true;
-
     }
   }
 }

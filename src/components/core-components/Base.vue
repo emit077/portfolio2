@@ -15,6 +15,12 @@
 		</v-container>
 
 		<!-- <Footer/> -->
+
+		
+		<BottomNavigator class="small-screen">
+		</BottomNavigator>
+
+
 	</v-app>
 	
 </template>
@@ -27,6 +33,7 @@ export default {
 		Drawer: () => import('./Drawer.vue'),
 		MainBody: () => import('./MainBody.vue'),
 		// Footer: () => import('./Footer.vue'),
+		BottomNavigator: () => import('./BottomNavigator.vue'),
 	},
 	data () {
 		return {

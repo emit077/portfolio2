@@ -15,9 +15,9 @@ import ContactMe from "../components/contact-components/ContactMe.vue"
 export const routes = [
 // { path: '', component: Profile },
 	{
-		path: '/a', component: Base,redirect:{name:"profile"},
+		path: '', component: Base,redirect:{name:"profile"},
 		children: [
-		{ path: 'profile', component: Profile , name: 'profile' },
+		{ path: '', component: Profile , name: 'profile' },
 		{ path: 'about-me', component: AboutMe , name: 'aboutMe' },
 		{ path: 'tech-skill', component: TechnicalSkills , name: 'techSkill' },
 		{ path: 'contact-me', component: ContactMe , name: 'contactMe' },

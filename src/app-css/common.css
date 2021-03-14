@@ -6,61 +6,74 @@
 
 /*font family */
 
-.font-borlow{
+.font-borlow {
 	font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
-.font-aldrich{
+.font-aldrich {
 	font-family: 'Aldrich', sans-serif !important;
 }
-.font-roboto{
+
+.font-roboto {
 	font-family: 'Roboto', sans-serif;
 }
-.font-la-belle-auror{
+
+.font-la-belle-auror {
 	font-family: 'La Belle Aurore', cursive;
 }
-.font-Oswald{
+
+.font-Oswald {
 	font-family: 'Oswald', sans-serif;
 }
 
 /* */
 
-.html-tag{
-	color:#515152;
+.html-tag {
+	color: #515152;
 }
+
 /* remove margin form  p tab */
-p{
+p {
 	margin: 0px !important;
 }
 
 /* change curser to ponter*/
-.cursor-pointer{
+.cursor-pointer {
 
 	cursor: pointer;
 }
 
 
-.m-h-100{
-	min-height:100% !important;
+.m-h-100 {
+	min-height: 100% !important;
 }
 
 
 /* for small screen hide some details*/
-.small-screen{
-	display: none;
+.small-screen {
+	display: none !important;
 }
+
 @media screen and (max-width: 900px) {
-	.small-screen{
+	.small-screen {
 		display: flex;
 	}
-	.large-screen{
-		display: none;
-	} 
+
+	.large-screen {
+		display: none !important;
+	}
 }
 
 /* color for core element*/
-.body-bg{
-	fill:#1d1d1d;
-	background-color:#1d1d1d;
+.body-bg {
+	fill: #1d1d1d;
+	background-color: #1d1d1d;
 }
 
+
+@media screen and (max-width: 900px) {
+	.page-title {
+		font-size: 40px !important;
+		color: #08fdd8;
+	}
+}
